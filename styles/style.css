@@ -1,3 +1,7 @@
-nav, .bg-hero {
+.bg-hero {
     background-image: url("/images/backdrop.png");
+}
+
+.big {
+    height: 700px;
 }
