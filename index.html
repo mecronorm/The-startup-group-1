@@ -5,43 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Panic Button Pals</title>
+    <link rel="stylesheet" href="/styles/style.css">
 </head>
-<body>
-    <nav class="bg-orange-200 flex p-10">
+<body class="">
+    <nav class="bg-orange-200 flex p-10 bg-fixed bg-cover">
         <img class="rounded-full w-24 h-24" src="./images/company-logo.png" alt="company logo">
         <h1 class="m-auto ml-20 font-semibold text-lg">Panic Button Pals</h1>
         <ul class="flex m-auto mr-20">
             <li class="mr-10 text-white font-bold"><a href="#">Home</a></li>
-            <li class="mr-10"><a href="./src/services/index.html">Services</a></li>
-            <li class="mr-10"><a href="./src/about/index.html">About</a></li>
-            <li class="mr-10"><a href="./src/contact/index.html">Contact</a></li>
-            <li class="mr-10"><a href="./src/reviews/index.html">Reviews</a></li>
+            <li class="mr-10"><a href="/src/services/index.html">Services</a></li>
+            <li class="mr-10"><a href="/src/about/index.html">About</a></li>
+            <li class="mr-10"><a href="/src/contact/index.html">Contact</a></li>
+            <li class="mr-10"><a href="/src/reviews/index.html">Reviews</a></li>
         </ul>
     </nav>
     <div class="container m-auto">
-        <div class="bg-orange-200 p-10 text-center">
+        <div class="bg-orange-200 p-10 text-center bg-transparent">
             <div class="w-2/4 m-auto ">
                 <h1 class="font-bold text-xl">Welcome to Panic Button Pals!</h1>
                 <p>"For all of life's little emergencies, call the funniest superheroes in town!"</p>
             </div>
         </div>
-        <div class="bg-white w-2/4 p-10 m-auto text-center">
-            <img class="m-auto" src="./images/supergirl.png" alt="cartoon of a girl superhero flying">
-            <p>Imagine having a team of silly superheroes show up whenever you need a bit of comedic relief or assistance with the small stuff in life.</p><br>
-            <p>Panic Button Pals would bring humor and laughter to the rescue!</p>
+        <div class="bg-white p-10 text-center">
+            <div class="w-2/4 m-auto">
+                <img class="m-auto" src="./images/supergirl.png" alt="cartoon of a girl superhero flying">
+                <p>Imagine having a team of silly superheroes show up whenever you need a bit of comedic relief or assistance with the small stuff in life.</p><br>
+                <p>Panic Button Pals would bring humor and laughter to the rescue!</p>
+            </div>
         </div>
         <div class="bg-orange-200 p-10 m-auto">
-            <div class="m-auto w-1/3 flex flex-col">
+            <div class="m-auto w-2/4 flex flex-col">
                 <div class="flex w-full">
-                    <p class="m-auto ml-0">From retreiving your keys from places you never would've looked..</p>
+                    <div class="m-auto ml-0">
+                        <p class="font-semibold">From retreiving your keys from places you never would've looked..</p>
+                        <ul class="list-disc list-inside my-4">
+                            <li>Your back pocket</li>
+                            <li>Your jacket</li>
+                            <li>In your hands</li>
+                        </ul>
+                    </div>
                     <img class="m-auto mr-0" src="./images/key.png" alt="">
                 </div>
                 <div class="flex">
                     <img class="w-52 ml-0" src="./images/bubble-pop.jpeg" alt="">
-                    <p class="m-auto mr-0">..to Popping stress</p>
+                    <div class="m-auto mr-0">
+                        <p class="font-semibold">..to Popping stress!</p>
+                        <p>Pop that bubble like there is no tomorrow!</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <!-- <div class="bg-black bg-hero bg-fixed bg-cover h-20"></div> -->
+        <footer class="bg-orange-500 h-20 p-5 text-center text-white">
+            <p>Copyright @ Verou5 - Group1</p>
+            <p class="mt-auto"><a href="tel:123-456-7890">Call us at: 123-456-7890</a></p>
+        </footer>
     </div>
 </body>
 </html>
