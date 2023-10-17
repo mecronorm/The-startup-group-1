@@ -10,15 +10,15 @@
     <script type="module" src="/scripts/scripts.js" defer></script>
 </head>
 <body class="">
-    <nav class="flex p-10 bg-hero bg-fixed bg-cover w-full z-10">
-        <img class="rounded-full w-24 h-24" src="./images/company-logo.png" alt="company logo">
-        <h1 class="m-auto ml-20 font-semibold text-xl">Panic Button Pals</h1>
-        <ul class="flex m-auto mr-20">
-            <li class="mr-10 text-white font-bold"><a href="#">Home</a></li>
-            <li class="mr-10"><a href="/src/services/index.html">Services</a></li>
-            <li class="mr-10"><a href="/src/about/index.html">About</a></li>
-            <li class="mr-10"><a href="/src/contact/index.html">Contact</a></li>
-            <li class="mr-10"><a href="/src/reviews/index.html">Reviews</a></li>
+    <nav class="flex p-5 bg-hero bg-fixed bg-cover w-full z-10">
+        <img class="rounded-full w-12 h-12 md:w-24 md:h-24" src="./images/company-logo.png" alt="company logo">
+        <h1 class="m-auto ml-20 font-semibold text-xl hidden md:block">Panic Button Pals</h1>
+        <ul class="flex m-auto md:mr-10">
+            <li class="mr-5 text-blue-500 font-bold"><a href="#">Home</a></li>
+            <li class="mr-5"><a href="/src/services/index.html">Services</a></li>
+            <li class="mr-5"><a href="/src/about/index.html">About</a></li>
+            <li class="mr-5"><a href="/src/contact/index.html">Contact</a></li>
+            <li class="mr-5"><a href="/src/reviews/index.html">Reviews</a></li>
         </ul>
     </nav>
     <div class="m-auto">
@@ -26,7 +26,7 @@
         </div>
         <div class="bg-white p-10 text-center">
             <div class="w-3/4 m-auto">
-                <h1 class="font-bold xs:text-2xl sm:text-3xl lg:text-5xl">Welcome to Panic Button Pals!</h1>
+                <h1 class="font-bold p-4 xs:text-2xl sm:text-3xl lg:text-5xl">Welcome to Panic Button Pals!</h1>
                 <p>"For all of life's little emergencies, call the funniest superheroes in town!"</p>
                 <br>
                 <img class="m-auto" src="/images/supergirl.png" alt="cartoon of a girl superhero flying">
@@ -35,9 +35,9 @@
             </div>
         </div>
         <div class="bg-blue-100 p-10 m-auto">
-            <div class="m-auto w-3/4 flex flex-col">
-                <div class="flex flex-col md:flex-row mb-2">
-                    <div class="m-auto ml-0">
+            <div class="m-auto w-2/4 lg:w-2/3 flex flex-col">
+                <div class="flex flex-col lg:flex-row mb-2 align-middle justify-center">
+                    <div class="m-auto lg:ml-0">
                         <p class="font-semibold">From retreiving your keys from places you never would've looked..</p>
                         <ul class="list-disc list-inside my-4">
                             <li>Your back pocket</li>
@@ -45,14 +45,14 @@
                             <li>In your hands</li>
                         </ul>
                     </div>
-                    <img class="m-auto md:mr-0" src="/images/key.png" alt="">
+                    <img class="w-52 lg:w-80 m-auto ml-0 lg:mr-0" src="/images/Bubble_Wrap_super_hero_Brigade 1.jpeg" alt="">
                 </div>
-                <div class="flex flex-col md:flex-row">
-                    <img class="w-96 ml-0" src="/images/Bubble_Wrap_super_hero_Brigade 1.jpeg" alt="">
-                    <div class="m-auto mr-0">
-                        <p class="font-semibold float-right">..to Popping stress!</p>
-                        <p class="float-right">Pop that bubble like there is no tomorrow!</p>
-                        <p><a class="text-blue-500 underline hover:text-white float-right" href="/src/services/index.html">Check out our services!</a></p>
+                <div class="flex flex-col lg:flex-row">
+                    <img class="w-52 lg:w-80 m-auto mr-0 lg:ml-0" src="/images/Bubble_Wrap_super_hero_Brigade 1.jpeg" alt="">
+                    <div class="m-auto ml-0 lg:ml-10 lg:mr-0">
+                        <p class="font-semibold">..to Popping stress!</p>
+                        <p class="">Pop that bubble like there is no tomorrow!</p>
+                        <p><a class="text-blue-500 underline hover:text-white" href="/src/services/index.html">Check out our services!</a></p>
                     </div>
                 </div>
             </div>
@@ -63,7 +63,7 @@
                 <!-- Carousel -->
                 <div
                   id="carouselExampleCaptions"
-                  class="relative"
+                  class="relative max-w-2xl m-auto"
                   data-te-carousel-init
                   data-te-carousel-slide>
                   <!--Carousel indicators-->
