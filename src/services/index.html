@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="/styles/style.css">
 </head>
 <body>
-    <nav class="bg-blue-200 hidden md:flex p-5 bg-fixed bg-cover">
-        <a href="/src/about/index.html"><img class="rounded-full w-24 h-24" src="../../images/company-logo.png" alt="company logo"></a>
-        <h1 class="m-auto ml-4 lg:ml-20 font-semibold text-xl hidden md:block">Panic Button Pals</h1>
-        <ul class="flex justify-between m-auto mr-20">
-            <li class="mr-5"><a href="../../index.html">Home</a></li>
-            <li class="mr-5 font-bold text-white"><a href="./index.html">Services</a></li>
-            <li class="mr-5"><a href="../about/index.html">About</a></li>
-            <li class="mr-5"><a href="../contact/index.html">Contact</a></li>
-            <li class="mr-5"><a href="../reviews/index.html">Reviews</a></li>
+    <nav class="flex bg-blue-200 p-5 bg-hero bg-fixed bg-cover w-full z-10 fixed top-0 shadow">
+        <img class="rounded-full w-12 h-12 md:w-24 md:h-24" src="../../images/company-logo.png" alt="company logo">
+        <h1 class="m-auto ml-20 font-semibold text-xl hidden md:block">Panic Button Pals</h1>
+        <ul class="flex m-auto md:mr-10">
+            <li class="mr-5 text-blue-500 font-bold"><a href="#">Home</a></li>
+            <li class="mr-5 hover:text-blue-600"><a href="../services/index.html">Services</a></li>
+            <li class="mr-5 hover:text-blue-600"><a href="../about/index.html">About</a></li>
+            <li class="mr-5 hover:text-blue-600"><a href="../contact/index.html">Contact</a></li>
+            <li class="mr-5 hover:text-blue-600"><a href="../reviews/index.html">Reviews</a></li>
         </ul>
     </nav>
-    <div class="md:w-9/12 m-auto my-20">
+    <div class="md:w-9/12 w-11/12 m-auto my-20 mt-40">
         <header>
             <h1 class="lg:text-9xl md:text-7xl text-7xl font-bold">Our Services</h1>
             <p class="text-5xl lg:w-2/3">Here we have a list of some of our services that we provide.</p> <p class="text-xl w-1/2">If any of our services are of intrest of you, we coulds schedule an appointement with you.</p>
@@ -69,5 +68,6 @@
         <p>© 2023 Panic Button Pals - All rights reserved</p>
         <p class="mt-auto">Call us at: <a class="hover:text-black" href="tel:123-456-7890">123-456-7890</a></p>
     </footer>
+    <script src="../../scripts/scroll.js"></script>
 </body>
 </html>
