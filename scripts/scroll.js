@@ -19,14 +19,14 @@ function changeNavclasses() {
     var ul = document.body.getElementsByTagName('ul')[0];
 
     if (verticalScrollPx > 1 || windowWidth < 1024) {
-        homeNav.classList.add('bg-blue-200');
+        if (homeNav != null) homeNav.classList.add('bg-blue-200');
         nav.classList.remove('p-10');
         nav.classList.add('p-2');
         ul.classList.add('m-auto');
         nav.classList.remove('bg-hero');
         nav.classList.add('shadow');
     } else {
-        homeNav.classList.remove('bg-blue-200');
+        if (homeNav != null) homeNav.classList.remove('bg-blue-200');
         nav.classList.add('p-10');
         nav.classList.remove('p-2');
         ul.classList.remove('m-auto');
