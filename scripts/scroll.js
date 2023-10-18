@@ -4,7 +4,7 @@ function addScrollListener() {
     window.addEventListener('scroll', () => {
         const verticalScrollPx = window.scrollY;
         const windowWidth = window.innerWidth;
-        console.log(windowWidth);
+        
         var nav = document.body.getElementsByTagName('nav')[0];
         var ul = document.body.getElementsByTagName('ul')[0];
 
