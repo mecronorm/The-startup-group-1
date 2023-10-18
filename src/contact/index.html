@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com/"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"></script>
     <title>Contact Page</title>
 </head>
-<body>
-    <nav class="flex bg-blue-200 p-5 w-full z-10 fixed top-0 shadow">
+<body x-data="{ open: false }">
+    <!-- <nav class="flex bg-blue-200 p-5 w-full z-10 fixed top-0 shadow">
       <img class="rounded-full w-12 h-12 md:w-24 md:h-24" src="../../images/company-logo.png" alt="company logo">
       <h1 class="m-auto ml-20 font-semibold text-xl hidden md:block">Panic Button Pals</h1>
       <ul class="flex m-auto md:mr-10">
@@ -17,7 +18,48 @@
           <li class="mr-5 text-blue-500 font-bold"><a href="#">Contact</a></li>
           <li class="mr-5 hover:text-blue-600"><a href="../../src/reviews/index.html">Reviews</a></li>
       </ul>
-  </nav>
+  </nav> -->
+  <nav class="flex bg-blue-200 p-5 w-full z-10 top-0 fixed justify-between">
+    <img class="rounded-full w-12 h-12 md:w-24 md:h-24" src="../../images/company-logo.png" alt="company logo">
+    <h1 class="m-auto ml-4 lg:ml-20 font-semibold text-xl hidden md:block">Panic Button Pals</h1>
+    <!--  -->
+    <button @click="open = !open" class="md:hidden text-blue-500">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-6 h-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"
+        />
+      </svg>
+    </button>
+    <div class="hidden md:flex">
+      <!--  -->
+    <ul class="flex m-auto md:mr-10">
+      <li class="mr-5 hover:text-blue-600"><a href="../../index.html">Home</a></li>
+      <li class="mr-5 hover:text-blue-600"><a href="../../src/services/index.html">Services</a></li>
+      <li class="mr-5 hover:text-blue-600"><a href="../../src/about/index.html">About</a></li>
+      <li class="mr-5 text-blue-500 font-bold"><a href="#">Contact</a></li>
+      <li class="mr-5 hover:text-blue-600"><a href="../../src/reviews/index.html">Reviews</a></li>
+    </ul>
+  </div>
+</nav>
+<!--  -->
+  <div x-show="open" class="bg-white w-full text-center md:hidden p-5">
+    <ul class="mt-20">
+      <li class="mr-5 hover:text-blue-600"><a href="../../index.html">Home</a></li>
+      <li class="mr-5 hover:text-blue-600"><a href="../../src/services/index.html">Services</a></li>
+      <li class="mr-5 hover:text-blue-600"><a href="../../src/about/index.html">About</a></li>
+      <li class="mr-5 text-blue-500 font-bold"><a href="#">Contact</a></li>
+      <li class="mr-5 hover:text-blue-600"><a href="../../src/reviews/index.html">Reviews</a></li>
+    </ul>
+  </div>
     <section class="mt-56 text-center">
         <div class="mx-auto pt-7 w-4/5 px-3 bg-blue-200">
             <!-- <div class="bg-[url('../../images/Bubble_Wrap_super_hero_Brigade1.jpeg')]"></div> -->
@@ -201,6 +243,6 @@
         <p>Copyright @ Verou5 - Group1</p>
         <p class="mt-auto"><a href="tel:123-456-7890">Call us at: 123-456-7890</a></p>
       </footer>
-      <script src="../../scripts/scroll.js"></script>
+      <script defer src="../../scripts/scroll.js"></script>
 </body>
 </html>
