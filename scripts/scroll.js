@@ -20,15 +20,15 @@ function changeNavclasses() {
 
     if (verticalScrollPx > 1 || windowWidth < 1024) {
         if (homeNav != null) homeNav.classList.add('bg-blue-200');
-        nav.classList.remove('p-10');
-        nav.classList.add('p-2');
+        if (homeNav != null) homeNav.classList.remove('p-10');
+        if (homeNav != null) homeNav.classList.add('p-2');
         if (homeUl != null) homeUl.classList.add('m-auto');
         if (homeNav != null) homeNav.classList.remove('bg-hero');
         nav.classList.add('shadow');
     } else {
         if (homeNav != null) homeNav.classList.remove('bg-blue-200');
-        nav.classList.add('p-10');
-        nav.classList.remove('p-2');
+        if (homeNav != null) homeNav.classList.add('p-10');
+        if (homeNav != null) homeNav.classList.remove('p-2');
         if (homeUl != null) homeUl.classList.remove('m-auto');
         if (homeNav != null) homeNav.classList.add('bg-hero');
         nav.classList.remove('shadow');
