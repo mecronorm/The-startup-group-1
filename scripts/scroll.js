@@ -25,6 +25,7 @@ function changeNavclasses() {
         nav.classList.add('p-2');
         ul.classList.add('m-auto');
         nav.classList.remove('bg-hero');
+        nav.classList.add('shadow');
     } else {
         nav.classList.remove('fixed');
         nav.classList.remove('top-0');
@@ -33,5 +34,6 @@ function changeNavclasses() {
         nav.classList.remove('p-2');
         ul.classList.remove('m-auto');
         nav.classList.add('bg-hero');
+        nav.classList.remove('shadow');
     }
 }
