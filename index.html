@@ -6,13 +6,33 @@
     <title>Panic Button Pals</title>
     <link rel="stylesheet" href="./styles/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js" defer></script>
-    <script type="module" src="./scripts/scripts.js" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script defer type="module" src="./scripts/scripts.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"></script>
 </head>
-<body class="">
-    <nav class="homeNav flex p-5 bg-white bg-hero bg-fixed bg-cover w-full z-10 top-0 fixed transition-all duration-700">
+<body x-data="{ open: false }" class="">
+    <nav class="homeNav flex p-5 bg-white bg-hero bg-fixed bg-cover w-full z-10 top-0 fixed transition-all duration-700 justify-between">
         <img class="rounded-full w-12 h-12 md:w-24 md:h-24" src="./images/company-logo.png" alt="company logo">
         <h1 class="m-auto ml-4 lg:ml-20 font-semibold text-xl hidden md:block">Panic Button Pals</h1>
+        <!--  -->
+        <button @click="open = !open" class="md:hidden text-blue-500">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="w-6 h-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+        <div class="hidden md:flex">
+          <!--  -->
         <ul class="flex m-auto md:mr-10">
             <li class="mr-5 text-blue-500 font-bold"><a href="#">Home</a></li>
             <li class="mr-5 hover:text-blue-600"><a href="./src/services/index.html">Services</a></li>
@@ -20,7 +40,19 @@
             <li class="mr-5 hover:text-blue-600"><a href="./src/contact/index.html">Contact</a></li>
             <li class="mr-5 hover:text-blue-600"><a href="./src/reviews/index.html">Reviews</a></li>
         </ul>
+      </div>
     </nav>
+    <!--  -->
+      <div x-show="open" class="bg-white w-full text-center md:hidden fixed p-5">
+        <ul class="mt-20">
+          <li class="mr-5 text-blue-500 font-bold"><a href="#">Home</a></li>
+          <li class="mr-5 hover:text-blue-600"><a href="./src/services/index.html">Services</a></li>
+          <li class="mr-5 hover:text-blue-600"><a href="./src/about/index.html">About</a></li>
+          <li class="mr-5 hover:text-blue-600"><a href="./src/contact/index.html">Contact</a></li>
+          <li class="mr-5 hover:text-blue-600"><a href="./src/reviews/index.html">Reviews</a></li>
+        </ul>
+      </div>
+    <!--  -->
     <div class="m-auto">
         <div class="bg-blue-100 bg-hero bg-fixed bg-cover p-10 text-center big">
         </div>
