@@ -58,8 +58,8 @@
         </div>
         <div class="bg-white p-0 pb-10 md:p-10 text-center">
             <div class="w-3/4 m-auto">
-                <h1 class="font-bold text-3xl lg:text-5xl mb-2">Welcome to Panic Button Pals!</h1>
-                <p>"For all of life's little emergencies, call the funniest superheroes in town!"</p>
+                <h1 class="font-bold text-3xl lg:text-5xl mb-4">Welcome to Panic Button Pals!</h1>
+                <p class="text-xl font-semibold">"For all of life's little emergencies, call the funniest superheroes in town!"</p>
                 <br>
                 <img class="m-auto my-10" src="./images/supergirl.png" alt="cartoon of a girl superhero flying">
                 <p>Imagine having a team of silly superheroes show up whenever you need a bit of comedic relief or assistance with the small stuff in life.</p><br>
@@ -70,7 +70,7 @@
             <div class="m-auto w-2/4 lg:w-2/3 flex flex-col">
                 <div class="flex flex-col lg:flex-row mb-2 align-middle justify-center">
                     <div class="m-auto lg:ml-0">
-                        <p class="font-semibold">From retreiving your keys from places you never would've looked..</p>
+                        <p class="text-xl font-semibold">From retreiving your keys from places you never would've looked..</p>
                         <ul class="list-disc list-inside my-4">
                             <li>Your back pocket</li>
                             <li>Your jacket</li>
@@ -82,7 +82,7 @@
                 <div class="flex flex-col lg:flex-row">
                     <img class="w-52 lg:w-80 m-auto mr-0 lg:ml-0" src="./images/Bubble_Wrap_super_hero_Brigade 1.jpeg" alt="superhero costume wearing kids sitting on bubbles">
                     <div class="m-auto ml-0 lg:ml-auto lg:mr-0">
-                        <p class="font-semibold">..to Popping stress!</p>
+                        <p class="text-xl font-semibold">..to Popping stress!</p>
                         <p class="">Pop that bubble like there is no tomorrow!</p>
                         <p><a class="text-blue-500 underline hover:text-blue-600" href="./src/services/index.html">Check out our services!</a></p>
                     </div>
@@ -97,8 +97,9 @@
                   id="crewCarousel"
                   class="relative max-w-2xl m-auto"
                   data-te-carousel-init
-                  data-te-carousel-slide
-                  data-te-ride="carousel">
+                  data-te-pause="false"
+                  data-te-ride="carousel"
+                  data-te-interval="5000">
                   <!--Carousel indicators-->
                   <div
                     class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
@@ -123,12 +124,18 @@
                       data-te-slide-to="2"
                       class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
                       aria-label="Slide 3"></button>
-                      <button
-                        type="button"
-                        data-te-target="#crewCarousel"
-                        data-te-slide-to="3"
-                        class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
-                        aria-label="Slide 4"></button>
+                    <button
+                      type="button"
+                      data-te-target="#crewCarousel"
+                      data-te-slide-to="3"
+                      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                      aria-label="Slide 4"></button>
+                    <button
+                      type="button"
+                      data-te-target="#crewCarousel"
+                      data-te-slide-to="4"
+                      class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                    aria-label="Slide 5"></button>
                   </div>
             
                   <!--Carousel items-->
@@ -137,13 +144,13 @@
                     <!--First item-->
                     <div
                       class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
-                      data-te-carousel-active
                       data-te-carousel-item
+                      data-te-carousel-active
                       style="backface-visibility: hidden">
                       <img
-                        src="./images/bubble-pop.jpeg"
+                        src="./images/meet-the-crew.jpg"
                         class="block w-full"
-                        alt="superhero costume wearing kids sitting on bubbles" />
+                        alt="image with text saying 'meet the crew'" />
                       <div
                         class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
                       </div>
@@ -183,6 +190,19 @@
                         src="./images/Laughter_Paramedics_Superheroes.jpg"
                         class="block w-full"
                         alt="paramedics laughing dressed as superheroes" />
+                      <div
+                        class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                      </div>
+                    </div>
+                    <!--Fifth item-->
+                    <div
+                      class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
+                      data-te-carousel-item
+                      style="backface-visibility: hidden">
+                      <img
+                        src="./images/bubble-pop.jpeg"
+                        class="block w-full"
+                        alt="superhero costume wearing kids sitting on bubbles" />
                       <div
                         class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
                       </div>
