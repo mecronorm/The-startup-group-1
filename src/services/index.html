@@ -8,21 +8,9 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"></script>
 </head>
 <body x-data="{ open: false }">
-    <!-- <nav class="flex bg-blue-200 p-5 bg-hero bg-fixed bg-cover w-full z-10 fixed top-0 shadow">
-        <img class="rounded-full w-12 h-12 md:w-24 md:h-24" src="../../images/company-logo.png" alt="company logo">
-        <h1 class="m-auto ml-20 font-semibold text-xl hidden md:block">Panic Button Pals</h1>
-        <ul class="flex m-auto md:mr-10">
-            <li class="mr-5 hover:text-blue-600"><a href="../../index.html" disabled>Home</a></li>
-            <li class="mr-5 text-blue-500 font-bold"><a href="../services/index.html">Services</a></li>
-            <li class="mr-5 hover:text-blue-600"><a href="../about/index.html">About</a></li>
-            <li class="mr-5 hover:text-blue-600"><a href="../contact/index.html">Contact</a></li>
-            <li class="mr-5 hover:text-blue-600"><a href="../reviews/index.html">Reviews</a></li>
-        </ul>
-    </nav> -->
     <nav class="flex bg-blue-200 p-2 w-full z-10 top-0 fixed justify-between">
         <a href="../../index.html"><img class="rounded-full w-12 h-12 md:w-24 md:h-24" src="../../images/company-logo.png" alt="company logo"></a>
         <h1 class="m-auto ml-4 lg:ml-20 font-semibold text-xl hidden md:block">Panic Button Pals</h1>
-        <!--  -->
         <button @click="open = !open" class="md:hidden text-blue-500">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +28,6 @@
           </svg>
         </button>
         <div class="hidden md:flex">
-          <!--  -->
         <ul class="flex m-auto md:mr-10">
             <li class="mr-5 hover:text-blue-600"><a href="../../index.html" disabled>Home</a></li>
             <li class="mr-5 text-blue-500 font-bold"><a href="../services/index.html">Services</a></li>
@@ -50,7 +37,6 @@
         </ul>
       </div>
     </nav>
-    <!--  -->
       <div x-show="open" class="bg-white w-full shadow-lg text-center md:hidden fixed top-14 p-5">
         <ul class="">
             <li class="mr-5 hover:text-blue-600"><a href="../../index.html" disabled>Home</a></li>
