@@ -23,9 +23,9 @@ function initHeader() {
     if (homeNav != null && homeUl != null) {
         if (verticalScrollPx == 0 && windowWidth > 1024) {
             homeNav.classList.add('bg-white');
+            homeNav.classList.add('bg-hero')
         } else if (windowWidth < 1024) {
             homeNav.classList.add('bg-blue-200');
-            homeNav.classList.remove('bg-hero');
             homeNav.classList.remove('p-10');
             homeNav.classList.add('p-2');
             homeUl.classList.add('m-auto');
